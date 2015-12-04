@@ -9,7 +9,7 @@ namespace ConsoleApplication1
     class domanda
     {
         public String Autore, DataIns, Categoria, Testo, Tipo, Scelte , rispostaData;
-        public Int16 id;
+        
         public domanda(String Autore, String DataIns, String Categoria, String Testo, String Tipo, String Scelte)
         {
             this.Autore = Autore;
@@ -19,7 +19,20 @@ namespace ConsoleApplication1
             this.Tipo = Tipo;
             this.Scelte = Scelte;
             this.rispostaData = "";
-            this.id = 0;
+            
+
+        }
+
+        public domanda(String []campi)
+        {
+            this.Autore = campi[0];
+            this.DataIns = DataIns;
+            this.Categoria = Categoria;
+            this.Testo = Testo;
+            this.Tipo = Tipo;
+            this.Scelte = Scelte;
+            this.rispostaData = "";
+            
 
         }
 
@@ -29,11 +42,7 @@ namespace ConsoleApplication1
         }
 
 
-        public domanda(String s)
-        { 
-            
-        }
-
+        
         public String rispostaCorretta()
         { 
             String s = "";
