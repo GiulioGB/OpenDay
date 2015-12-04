@@ -41,18 +41,19 @@ namespace ConsoleApplication1
 
         public void LeggiFile(String fileName)
         {
-            domanda dom ;
+            
             // Read sample data from CSV file
             using (CsvFileReader reader = new CsvFileReader(fileName))
             {
                 CsvRow row = new CsvRow();
                 while (reader.ReadRow(row))
                 {
-                    foreach (string str in row)
-                    {
-                        dom = new domanda(str);
-                        questionario.Add(dom);
-                    }
+                    domanda d = new domanda(row.ToArray());
+                    //foreach (string str in row)
+                    //{
+                    //    dom = new domanda(str);
+                    //    questionario.Add(dom);
+                    //}
                     
                 }
             }
