@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Informatics</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script>
+		jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+	</script>
+	
+	<style>
+		/* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+	</style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+               <a href="index.html"><img src="img/it.jpg" style="width: 50px; height: 30px; margin-top:10px;"></a>
+			   <a href="index_ing.html"><img src="img/eng.jpg" style="width: 50px; height: 30px; margin-top:10px;"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">HOME</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#job">JOB OPPORTUNITIES</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#university">UNIVERSITY</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#images">IMAGES</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#videos">VIDEOS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">CONTACTS</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">INFORMATICS</h1>
+                        <p class="intro-text">A &nbsp W O R L D &nbsp O F &nbsp O P P O R T U N I T I E S &nbsp</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- home-->
+    <section id="about" class="content-section text-center">
+        <div class="home">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>GENERAL INFORMATION</h2>
+                    <p>Computer science is the scientific and practical approach to computation and its applications. 
+					It is the systematic study of the feasibility, structure, expression, and mechanization of the methodical procedures 
+					(or algorithms) that underlie the acquisition, representation, processing, storage, communication of, and access to information. 
+					An alternate, more succinct definition of computer science is the study of automating algorithmic processes that scale. 
+					A computer scientist specializes in the theory of computation and the design of computational systems. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sbocchi lavorativi -->
+    <section id="job" class="content-section text-center">
+        <div class="jo">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>JOB OPPORTUNITIES</h2>
+                    <p>APPLICATION DEVELOPER</br>
+					   Applications developers translate software requirements into workable programming code and maintain and develop programs for use in business
+
+					</br></br>DATABASE ADMINISTRATOR</br>
+
+				       A database administrator (DBA) is responsible for the performance, integrity and security of a database. They will also be involved in the planning and development of the database as well as troubleshooting any issues on behalf of the users.
+
+					</br></br>GAMES DEVELOPER</br>
+					Games developers are involved in the creation and production of games for personal computers, games consoles, social/online games, arcade games, tablets, mobile phones and other hand held devices. Their work involves either design (including art and animation) or programming.
+
+					</br></br>INFORMATION SYSTEM MANAGER</br>
+					An information systems manager is responsible for the computer systems within a company. 
+					Information systems managers work in every size of organisation in the industry and the service sector, usually with a staff of
+					technicians, programmers and database administrators reporting to them.
+
+				</br></br>WEB DESIGNER</br>
+				Web designers plan, create and code web pages, using both non-technical and technical skills to produce websites that fit the customer's requirements. They are involved in the technical and graphical aspects of pages, producing not just the look of the website but determining how it works as well. Web designers might also be responsible for the maintenance of an existing site.
+
+				</br></br>WEB DEVELOPER</br>
+				Web developers build and maintain websites and web applications. Although their work usually focuses solely on the underlying software and databases (known as the 'back end'), some web developers work on the interface and visual design (the 'front end'), while others combine both ('full-stack development').
+				</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- università -->
+    <section id="university" class="content-section text-center">
+        <div class="uni">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>UNIVERSITY</h2>
+                    <p>GRADUATE CERTIFICATE IN INFORMATION TECHNOLOGIES</br>
+					The Graduate Certificate in Information Technologies focuses on managing database technologies by developing the necessary 
+					skills and acquiring the knowledge needed to utilize the most current tools for gathering, storing, accessing, and processing 
+					information. Course work is designed to build the managerial and technical competencies demanded by today's technology-driven 
+					business world, and to examine the more technical aspects of managing technology, including database management systems, 
+					information communication networks, and data and network administration and security.
+					
+					</br></br>DEGREE PROGRAMME IN COMPUTER ENGINEERING</br>
+					The continuous development of computers and, more in general, of information technology has had an extraordinary impact 
+					on the productive, social and economic reality of recent years. Its goal is to train engineers and equip them with an 
+					extensive cultural preparation, enabling them to develop and use computer methods and tools with an engineering-oriented
+					perception, and to face problems that are common within an extremely wide spectrum of applications. The Degree Programme 
+					in Computer Engineering will allow students to build professional profiles that are among the most required on the job market.
+					
+					</br></br>DEGREE IN ELECTRONICS ENGINEERING</br>
+					The Electronics Engineering program aims at providing students with a solid knowledge on the design, use and innovation 
+					of electronic circuits, electronic devices and electronic systems, to follow and guide over the years the evolution of this 
+					technology sector with competence and to promote it in the fields of human activity where advantages are envisaged.
+					
+					</br></br>DEGREE IN ELECTRICAL ENGINEERING</br>
+					Electrical Engineering is the engineering field that studies and applies of electricity, electromagnetism and electronics. 
+					The programme in Electrical Engineering encompasses all subjectd required to educate undergraduate and graduate students in 
+					Electrical Engineering.
+					Nowadays, societal and industrial growth is largely based on the availability of energy in a form that can be readily 
+					transformed into light, heat, movement, electromagnetic waves for data transmission and remote processing. Electric energy 
+					represents the most efficient way to convert energy from primary energy sources and transport it to distant places. 
+					Its features make electricity unique for many activities in everyday life.Electric energy is clean, easy to control and 
+					environment friendly. Electric energy is a precious good that should not be wasted.
+					
+					</br></br>DEGREE IN TELECOMUNICATIONS ENGINEERING</br>
+					The Telecommunications Engineering covers many disciplines apparently far from each other that have developed over the years
+					from a common cultural basis. This Engineering field deals with the study, design, implementation, and management of 
+					communication networks (including the Internet), information transmission systems and devices, processing systems for voice, 
+					sound, data, images, and remote sensing.
+					</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- immagini-->
+    <section id="images" class="content-section text-center">
+        <H2>IMAGES</h2>
+		<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 900px; height: 500px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 900px; height: 500px; overflow: hidden;">
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/uno.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/due.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/tre.jpg" />
+            </div>
+			<div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/quattro.jpg" />
+            </div>
+			<div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/cinque.jpg" />
+            </div>
+			<div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/sei.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:6px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora12l" style="top:123px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora12r" style="top:123px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <a href="http://www.jssor.com" style="display:none">Jssor Slider</a>
+    </div>
+    </section>
+    <!-- video -->
+    <section id="videos" class="content-section text-center">
+        <div class="vi">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>VIDEOS</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- contacts-->
+	<section id="contact" class="content-section text-center">
+        <div class="con">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>CONTACTS</h2>
+                    <p>For futher information write at the email address saying a meaningful/relevant object, answers in a few days are guaranteed</p>
+                    <p><img src="img/mail.png" style="width: 30px; height: 30px;" />&nbsp;&nbsp;&nbsp;&nbsp;orientamentoinformaticosup@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/mail.png" style="width: 30px; height: 30px;" /></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Ba.Ca.Mo.La.La.Ga</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>

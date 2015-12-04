@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Informatica</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<!--<script>
+		jQuery(document).ready(function ($) {
+
+		
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+	</script>
+	
+	<style>
+		/* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+	</style>-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+               <a href="index.html"><img src="img/it.jpg" style="width: 50px; height: 30px; margin-top:10px;"></a>
+			   <a href="index_ing.html"><img src="img/eng.jpg" style="width: 50px; height: 30px; margin-top:10px;"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">HOME</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#job">SBOCCHI LAVORATIVI</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#university">UNIVERSITA'</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#images">IMMAGINI</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">CONTATTI</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">INFORMATICA</h1>
+                        <p class="intro-text">U N &nbsp  M O N D O &nbsp  D I &nbsp P O S S I B I L I T A'</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- home-->
+    <section id="about" class="content-section text-center">
+        <div class="home">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>NOZIONI GENERALI</h2>
+                    <p>L' informatica è la scienza che si occupa del trattamento dell' informazione mediante procedure automatizzabili. In particolare ha per oggetto lo studio dei fondamenti teorici dell' informazione, della sua computazione a livello logico e delle tecniche pratiche per la sua implementazione e applicazione in sistemi elettronici automatizzati detti quindi sistemi informatici. La questione principale che sostiene l' informatica è dunque "come si può automatizzare efficientemente l' elaborazione di informazioni". L' informatica, assieme all' elettronica e alle telecomunicazioni unificate insieme sotto la denominazione Information and Communication Technology (ICT), rappresenta quella disciplina e allo stesso tempo quel settore economico che ha dato vita e sviluppo alla terza rivoluzione industriale attraverso quella che è comunemente nota come rivoluzione informatica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sbocchi lavorativi -->
+    <section id="job" class="content-section text-center">
+        <div class="jo">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>SBOCCHI LAVORATIVI</h2>
+					<h4>Percorso Formativo E Sbocchi Professionali</h4></br>
+					<p><b>SVILUPPATORI DI APPLICAZIONI</b></BR>
+					Traducono i requisiti software in codice sorgente, questo codice, scritto in un determinato 
+					linguaggio di programmazione verrà poi eseguito da un elaboratore.</br>
+					<a href="biografia.html#zuckerberg">[Mark Elliot Zuckerberg]</a></br></br>
+					<b>AMMINISTRATORE DI DATABASE</b></br>
+					Operatore che all’interno di un azienda si occupa installare, configurare e gestire il server di database</BR>
+					</BR>
+					<b>SISTEMISTA</b></br>
+					Il sistemista è un tecnico specializzato che si occupa dell’installazione, configurazione, gestione, manutenzione, 
+					aggiornamento e monitoraggio di un sistema operativo e di uno o più sottosistemi di un sistema informatico.</br></br>
+					<b>SVILUPPATORE DI VIDEOGIOCHI</b></br>
+					Lo sviluppatore di videogiochi è colui che realizza applicazioni videoludiche, 
+					ovvero software interattivi di intrattenimento. Una società di sviluppo di videogiochi è un gruppo di sviluppatori 
+					con una comune ragione sociale, che sviluppa tali prodotti.</br>
+					<a href="biografia.html#koji">[Hideo Kojima]</a></br></br>
+					<b>WEB DESIGNER</b></br> 
+					Il web designer è colui che si occupa della codifica in linguaggio web di una bozza grafica realizzata da un graphic designer. 
+					Esistono tuttavia numerosi web designer che sono esperti anche nel campo del graphic design, mentre è più rara la situazione 
+					inversa</br></br>
+					<b>WEB DEVELOPER</b></br>
+					Web developer, parola di origine inglese traducibile con sviluppatore web, è una figura professionale che si occupa 
+					dello sviluppo di applicazioni web, in particolare dello sviluppo del codice sorgente di programmazione, 
+					dell'ottimizzazione dei database e dei linguaggi di markup attraverso tecniche di programmazione Web</br>
+					<a href="biografia.html#tim">[Tim Berners-Lee]</a>
+					</p>	
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- università -->
+    <section id="university" class="content-section text-center">
+        <div class="uni">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>UNIVERSITA'</h2>
+                    <p><b>LAUREA IN INFORMATICA</br></b>&nbsp;Il corso fornisce allo studente competenze e capacità fortemente interdisciplinari per rispondere alle esigenze sia della ricerca, sia del mercato del lavoro. Il carattere pervasivo dell'informatica richiede infatti figure professionali capaci di applicarla in molteplici settori produttivi e di comprenderne gli impatti in un più ampio contesto culturale, sociale ed economico.</p>
+                    <p><b>ING.INFORMATICA</br></b>&nbsp;La natura fortemente interdisciplinare dell'informatica e delle sue innumerevoli applicazioni richiede agli ingegneri informatici una cultura ad ampio spettro fin dalla Laurea triennale, sia per permettere un veloce ed efficace inserimento nel mondo del lavoro, sia per formare una solida base per l'eventuale approfondimento degli studi nei livelli superiori del percorso formativo.</p>
+                    <p><b>ING.ELETTRICA</br></b>&nbsp;I laureati in Ingegneria Elettrica sono caratterizzati da un bagaglio di conoscenze ad ampio spettro, necessarie ad affrontare le sfide sempre più impegnative del mondo del lavoro e della ricerca, non solo nell'ambito della produzione, trasmissione e distribuzione dell'energia elettrica, ma anche nella molteplice e variegata realtà delle applicazioni elettriche/elettroniche in ambito industriale, civile e dei servizi, nei settori dei trasporti e della compatibilità elettromagnetica</p>
+                    <p><b>ING.ELETTRONICA</br></b>&nbsp;La natura fortemente interdisciplinare dell’elettronica impone una preparazione scientifica e tecnica ad ampio spettro fin dalla Laurea di Primo Livello, sia per permettere un efficace inserimento nel mondo del lavoro che per formare una solida base per l’eventuale approfondimento degli studi nei livelli superiori del percorso universitario.</p>
+                    <p><b>ING.DI TELECOMUNICAZIONI</br></b>&nbsp;Il corso di studi in Ingegneria delle Telecomunicazioni si pone l'obiettivo di fornire una preparazione ingegneristica finalizzata allo sviluppo e all'impiego delle diverse tecnologie delle comunicazioni, con un percorso di formazione multidisciplinare. Agli studenti vengono offerte una solida preparazione di base e una serie di strumenti metodologici e tecnologici adatti ad affrontare tutte le problematiche delle moderne Telecomunicazioni.</p>
+                </div>
+            </div>
+         </div>
+    </section>
+	
+    <!-- immagini-->
+    <section id="images" class="content-section text-center">
+	<h2>IMMAGINI</h2>
+        <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 900px; height: 500px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 900px; height: 500px; overflow: hidden;">
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/uno.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/due.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/tre.jpg" />
+            </div>
+			<div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/quattro.jpg" />
+            </div>
+			<div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/cinque.jpg" />
+            </div>
+			<div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/sei.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:6px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora12l" style="top:123px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora12r" style="top:123px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <a href="http://www.jssor.com" style="display:none">Jssor Slider</a>
+    </div>
+    </section>
+    <!-- contatti -->
+	<section id="contact"  class="content-section text-center">
+        <div class="con">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>CONTATTI</h2>
+
+                    <p>per ulteriori info scrivere presso l' indirizzo mail indicando un oggetto significativo, assicuriamo risposte entro pochi giorni</p>
+
+                    <p><img src="img/mail.png" style="width: 30px; height: 30px;" />&nbsp;&nbsp;&nbsp;&nbsp;orientamentoinformaticosup@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/mail.png" style="width: 30px; height: 30px;" /></p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Ba.Ca.Mo.La.La.Ga</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
