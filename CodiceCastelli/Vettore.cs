@@ -10,10 +10,12 @@ namespace ConsoleApplication1
     class Vettore
     {
         List<domanda> questionario;
+        List<domanda> risposte;
         String fileName, fileFinale;
         public Vettore()
         { 
             questionario = new List<domanda>();
+            risposte = new List<domanda>();
             fileName = "";
             fileFinale = "";
             LeggiFile(fileName);
@@ -28,11 +30,8 @@ namespace ConsoleApplication1
             {
                 for (int i = 0; i < 100; i++)
                 {
-                    s = questionario.ElementAt(i);
-                    s = s.Testo + ";" + s.rispostaData + ";" + s.rispostaCorretta();
-                    
+                    s = risposte.ElementAt(i);
                     CsvRow row = new CsvRow();
-                  
                     row.Add(String.Format(s.ToString()));
                     writer.WriteRow(row);
                 }
@@ -54,7 +53,7 @@ namespace ConsoleApplication1
                     //    dom = new domanda(str);
                     //    questionario.Add(dom);
                     //}
-                    
+                    questionario.Add(d);
                 }
             }
         }
