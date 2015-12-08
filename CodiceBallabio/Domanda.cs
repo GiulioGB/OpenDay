@@ -42,12 +42,25 @@ namespace ConsoleApplication1
         }
 
 
-        
-        public String rispostaCorretta()
+        //domanda multipla
+        public String rispostaCorretta1()
         { 
             String s = "";
 
+
+
             return s;
         }
+
+        //VoF
+        public String rispostaCorretta2()
+        {
+            String s = "";
+
+
+
+            return s;
+        }
+
     }
 }
