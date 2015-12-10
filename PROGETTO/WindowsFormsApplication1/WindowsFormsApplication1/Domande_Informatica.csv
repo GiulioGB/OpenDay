@@ -1,0 +1,42 @@
+Tipo;Categoria;Domanda;Scelte;Autore;Data inserimento
+Risposta aperta;anagrafica;Nome;-;Castelli Francesco;05/11/2015
+Risposta aperta;anagrafica;Cognome;-;Castelli Francesco;05/11/2015
+Risposta multipla;informatica;Quali tra questi sono componenti di un PC?;1Rom/0Plotter/0Server/1Scheda Madre1CPU;Castelli Francesco;05/11/2015
+Risposta multipla;informatica;Quali tra queste non sono periferiche di input?;0Microfono/0Plotter/1Monitor/0Tastiera;Castelli Francesco;05/11/2015
+Risposta multipla;informatica;Quali tra questi sono sistemi operativi?;1Windows/0Word/0Software/1Linux;Castelli Francesco;05/11/2015
+Risposta multipla;informatica;Quali tra questi sono memorie esterne al PC?;0Stampante/1CD/0Modem/1USB;Castelli Francesco;05/11/2015
+Risposta multipla singola;informatica;Che cos'è l'informatica?;1Una scienza/0Una professione;Castelli Francesco;05/11/2015
+Risposta multipla singola;informatica;Unità di misura di un dato informatico?;1Bit/0Pixel/0Hertz;Castelli Francesco;05/11/2015
+Risposta multipla singola;informatica;Cos'è un Sistema Operativo?;0Insieme programmi installati/0Metodo con cui opera PC/1Interfaccia/0Programma che spiega funzioni;Castelli Francesco;05/11/2015
+Risposta multipla singola;informatica;Con il termine 'Software' cosa si intende?;0Memorie di massa1Programmi o dati0Memorie non riscrivibili0Inserimento dati;Castelli Francesco;05/11/2015
+Risposta multipla singola;informatica;Per operazione di Input cosa si intende?;1Immissione dati/0Emissione dati/0Elaborazione dati/0Cancellazione dati;Castelli Francesco;05/11/2015
+Vero o Falso;informatica;Windows non è un sistema operativo;0V/1F;Castelli Francesco;05/11/2015
+Vero o Falso;informatica;La ROM è un tipo di memoria;1V/0F;Castelli Francesco;05/11/2015
+Vero o Falso;informatica;La numerazione binaria si basa su 0 e 1;1V/0F;Castelli Francesco;05/11/2015
+Vero o Falso;informatica;Un byte è formato da 8 bit;1V/0F;Castelli Francesco;05/11/2015
+Vero o Falso;informatica;Un bit è formato da 8 byte;0V/1F;Castelli Francesco;05/11/2015
+Risposta multipla singola;informatica;Quale delle seguenti unità di memoria non consente la modifica dei dati in essa contenuti?;0RAM/0Hard disk/0Floppy disk/1ROM.;Castelli Francesco;05/11/2015
+Risposta multipla singola;informatica;Quanti caratteri diversi possono essere rappresentati nel codice ASCII ?;Finfiniti/F8/V256/F1024;Castelli Francesco;05/11/2015
+Risposta multipla singola;informatica;Quando si spegne il PC:;0si perdono i dati contenuti nella ROM/0si perdono i dati contenuti nell'Hard-disk/0si perdono i dati contenuti nel floppy-disk/1si perdono i dati contenuti nella RAM;Castelli Francesco;05/11/2015
+Risposta multipla singola;informatica;Il termine ROM è l'acronimo di:;0Random Only Memory/1Read Only Memory/0Read Optical Memory/0Random Optical memory;Castelli Francesco;05/11/2015
+Risposta multipla singola;informatica;In quale unità di misura è normalmente espressa la capacità di memoria di un Hard-disk ?;0Kbyte/0Bit/0Mbyte/1Gbyte;Castelli Francesco;05/11/2015
+Risposta multipla singola;informatica;"Quale tra le seguenti voci fa parte del ""software"" ?";0RAM/0Scheda video/0CPU/1Sistema operativo.;Mariani Massimo;05/11/2015
+Risposta multipla singola;informatica;La RAM di un moderno personal computer può essere pari a:;V256 Mbyte/F256 Kbyte/F256 Gbyte/F256 byte;Mariani Massimo;05/11/2015
+Risposta multipla singola;informatica;Quale tra i seguenti dispositivi di memoria può avere la capacità più alta?;0RAM/0Floppy disk/0CD-ROM/1Hard-disk;Mariani Massimo;05/11/2015
+Risposta aperta;informatica;Che differenza c'è tra hardware e software?;-;Mariani Massimo;05/11/2015
+Risposta aperta;informatica;Internet consente di __________ nel web;1Navigare;Mariani Massimo;05/11/2015
+Risposta multipla singola;informatica;Il Browser è un programma che consente di:;1navigare in Internet/0creare siti internet/0inviare Posta Elettronica/0connettersi ad un Internet Provider;Mariani Massimo;05/11/2015
+Risposta multipla singola;matematica;Un barattolo di pelati da 0,4 kg è alto 11 cm e ha la base di 6 cm di diametro.  Qual è il volume del barattolo?;F100 cm cubicI/F200 cm cubici/V300 cm cubici/F400 cm cubici;Mariani Massimo;05/11/2015
+Risposta multipla singola;informatica;Se nell’ambito di una conferenza si volessero presentare al pubblico i risultati di un’indagine statistica, quale software risulterebbe adeguato?;0Internet Explorer/0Access/0Frontpage/1Powerpoint/0Word;Mariani Massimo;05/11/2015
+Risposta aperta;informatica;I file .exe sono file _______;1Eseguibili;Mariani Massimo;05/11/2015
+Risposta aperta;informatica;I file .doc sono file di_______;1Word;Mariani Massimo;05/11/2015
+Risposta aperta;informatica;Il monitor è un dispositivo di ___________;1Output;Mariani Massimo;05/11/2015
+Risposta aperta;informatica;Un sistema operativo è un ______che fornisce all'utente una serie di comandi e _______ per fruire al meglio della potenza di calcolo di un qualsivoglia ______ elettronico. I sistemi operativi nascondono tutti i dettagli tecnici legati allo specifico ________ e architettura rappresentando le informazioni ad un alto livello;1Software/1Servizi/1Elaboratore/1Hardware;Mariani Massimo;05/11/2015
+Risposta aperta;informatica;Gli _______ sono i dati che il programma riceve in ingresso mentre gli ______ sono i dati che il programma trasmette verso un soggetto terzo.;1Input/1Output;Mariani Massimo;05/11/2015
+Risposta aperta;informatica;Un Computer è una ________ in grado di __________ complessi __________ matematici ed eventualmente altri tipi di ________ dati.;1Macchina/1eseguire/1calcoli/1elaborazione;Mariani Massimo;05/11/2015
+Risposta multipla singola;matematica;7x+14=35;Vx=3/Fx=5/Fx=6/Fx=9;Mariani Massimo;05/11/2015
+Risposta multipla singola;matematica;5x+4=29;Vx=5/Fx=7/Fx=6/Fx=24;Mariani Massimo;05/11/2015
+Risposta multipla singola;matematica;"L'insegnante chiede : "" Che cosa succede se si addizionano tre numeri dispari consecutivi ?";1Luisa: si ottiene sempre un numero dispari/0Giovanni: si ottiene sempre un multiplo di tre/0Andrea: si ottiene a volte un numero pari a volte un numero dispari/0Paola: si ottiene sempre il triplo di uno dei tre numeri;Mariani Massimo;05/11/2015
+Risposta multipla singola;matematica;Un bagnino ha già riservato 3/7 dei suoi ombrelloni per i clienti abituali. Se gli ombrelloni riservati sono 42, quanti ombrelloni può ancora affittare?;V24/F50/F18/F56;Mariani Massimo;05/11/2015
+Risposta multipla singola;matematica;Quale dei seguenti numeri si avvicina di più al risultato dell'operazione 3,18% di 1732?;V50/F25/F5/F500;Mariani Massimo;05/11/2015
+Risposta multipla singola;matematica;Se a = 2 e b = - 3 qual è il valore dell' espressione 2a – 3b2?;V(–23)/F(+31)/F(–5)/F(–14);Mariani Massimo;05/11/2015
