@@ -91,6 +91,11 @@ namespace WindowsFormsApplication1
             return Tipo;
         }
 
+        public String getTesto()
+        {
+            return Testo;
+        }
+
 
         //public void visualizzaDomanda()
         //{

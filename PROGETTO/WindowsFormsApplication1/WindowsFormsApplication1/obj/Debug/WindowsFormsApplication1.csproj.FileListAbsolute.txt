@@ -16,3 +16,12 @@ D:\BALLABIO_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplicatio
 D:\BALLABIO_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 D:\BALLABIO_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 D:\BALLABIO_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\BALLA_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\BALLA_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\BALLA_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\BALLA_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\BALLA_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\BALLA_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\BALLA_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\BALLA_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\BALLA_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache

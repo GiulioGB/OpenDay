@@ -23,7 +23,7 @@ namespace WindowsFormsApplication1
         public void caricaQ()
         {
             string[] d;
-            string[] allLines = File.ReadAllLines(@"D:\BALLABIO_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\Domande_Informatica.csv");
+            string[] allLines = File.ReadAllLines(@"D:\BALLA_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\Domande_Informatica.csv");
             
             
             for (int i = 0; i < 42; i++)
@@ -52,6 +52,12 @@ namespace WindowsFormsApplication1
         {
             return questionario.ElementAt(indice).getTipo();
             
+        }
+
+        public String getTesto(int indice)
+        {
+            return questionario.ElementAt(indice).getTesto();
+
         }
         
 

@@ -62,12 +62,13 @@
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Location = new System.Drawing.Point(1178, 711);
+            this.button1.Location = new System.Drawing.Point(1178, 641);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 53);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -85,7 +86,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button2.Location = new System.Drawing.Point(963, 711);
+            this.button2.Location = new System.Drawing.Point(963, 641);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(147, 53);
             this.button2.TabIndex = 8;
@@ -229,13 +230,14 @@
             this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button7.Location = new System.Drawing.Point(80, 722);
+            this.button7.Location = new System.Drawing.Point(76, 641);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(147, 53);
             this.button7.TabIndex = 3;
             this.button7.Text = "INDIETRO";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Visible = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // checkBox6
             // 
@@ -262,7 +264,7 @@
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(76, 425);
+            this.checkBox8.Location = new System.Drawing.Point(76, 424);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(80, 17);
             this.checkBox8.TabIndex = 9;
@@ -280,6 +282,7 @@
             this.checkBox9.Text = "checkBox4";
             this.checkBox9.UseVisualStyleBackColor = true;
             this.checkBox9.Visible = false;
+            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
             // checkBox10
             // 
@@ -361,7 +364,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(1426, 865);
+            this.ClientSize = new System.Drawing.Size(1337, 704);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);
