@@ -11,12 +11,16 @@ namespace WindowsFormsApplication1
     {
         List<domanda> questionario;
         List<risposte> risposte;
+        String fileDomande;
+        String fileRisposte;
 
         public gestioneFile()
         {
+            fileDomande = @"D:\GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\Domande_Informatica.csv";
+            fileRisposte = @"D:\GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\risposte.csv";
             questionario = new List<domanda>();
             risposte = new List<risposte>();
-            caricaQ();
+            //caricaQ();
             caricaFileRisposte();
         }
 
@@ -24,7 +28,7 @@ namespace WindowsFormsApplication1
         public void caricaQ()
         {
             string[] d;
-            string[] allLines = File.ReadAllLines(@"D:\BALLA_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\Domande_Informatica.csv");
+            string[] allLines = File.ReadAllLines(fileDomande);
             
             
             for (int i = 0; i < 42; i++)
@@ -46,18 +50,24 @@ namespace WindowsFormsApplication1
         public void caricaFileRisposte()
         {
             string[] d;
-            string[] allLines = File.ReadAllLines(@"D:\BALLA_GIT\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\risposte.csv");
+            string[] allLines = File.ReadAllLines(fileRisposte);
+            int num = File.ReadAllLines(fileRisposte).Length;
+            
 
-
-            for (int i = 0; ; i++)
+            for (int i = 0; i<num ; i++)
             {
                 d = allLines[i].Split(';');
                 risposte risp = new risposte();
-                risp.setRisposte(Int32.Parse(d[0]) , d[1].ToString() , d[2].ToString() , d[3].ToString() );
+                risp.setId(Int32.Parse(d[0]));
+                risp.setData(d[1]);
+                risp.setRisposte( d[2].ToString() , d[3].ToString() , d[4].ToString() );
                 risposte.Add(risp);
             }
         
         }
+
+        
+        
         public void caricaR(risposte r)
         {
             risposte.Add(r);
@@ -65,13 +75,17 @@ namespace WindowsFormsApplication1
 
         public void scriviFileRisposte()
         {
-            var file = @"D:\GITHUB\OpenDay\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\risposte.csv";
-            
            
-            //stampa la riga
-                
+            var csv = new StringBuilder();
+            var newLine = "";
 
+            for (int i = 0; i < risposte.Count; i++)
+            {
+                newLine = risposte.ElementAt(i).getRow();
+                csv.Append(newLine+'\n');
+            }
 
+            File.WriteAllText(fileRisposte, csv.ToString());
         }
 
         public String getTipo(int indice)

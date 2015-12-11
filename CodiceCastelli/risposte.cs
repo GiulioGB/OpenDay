@@ -9,7 +9,6 @@ namespace WindowsFormsApplication1
     class risposte
     {
         int IdQuestionario;
-        
         String Data;
         String[] Domanda;
         int numEl;
@@ -17,21 +16,35 @@ namespace WindowsFormsApplication1
        
         public risposte()
         {
-            int numEl = 0;
-            Data = DateTime.Today.ToShortDateString();
+            this.numEl = 0;
+            Domanda = new String[100];
         }
 
-        public void setRisposte(int id , String testo, String scelte, String risp)
+        public void setData()
+        {
+            this.Data = DateTime.Today.ToShortDateString();
+        }
+
+        public void setData(String d)
+        {
+            this.Data = d;
+        }
+
+        public void setId(Int32 id)
         {
             this.IdQuestionario = id;
-            Domanda[numEl] = testo + scelte + risp;
-            numEl++;
         }
 
+        public void setRisposte(String testo, String scelte, String risp)
+        {
+            Domanda[this.numEl] = testo + ";" + scelte + ";" + risp + ";";
+            this.numEl = this.numEl+1;
+        }
 
+        
         public String getRow()
         {
-            String row = IdQuestionario + Data;
+            String row = IdQuestionario+";" + Data + ";";
             for (int i = 0; i < numEl; i++)
                 row = row + Domanda[i];
 
