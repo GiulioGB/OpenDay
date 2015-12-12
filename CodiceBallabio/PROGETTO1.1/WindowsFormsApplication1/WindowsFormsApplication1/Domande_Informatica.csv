@@ -1,10 +1,9 @@
 Tipo;Categoria;Domanda;Scelte;Autore;Data inserimento
 Risposta aperta;anagrafica;Nome;-;Castelli Francesco;05/11/2015
 Risposta aperta;anagrafica;Cognome;-;Castelli Francesco;05/11/2015
+Risposta multipla;matematica;risolvi: 5x+4=29;0x=7/1x=5/0x=6/0x=24;Mariani Massimo;05/11/2015
 Risposta multipla;informatica;Quali tra questi sono componenti di un PC?;1Rom/0Plotter/0Server/1Scheda Madre;Castelli Francesco;05/11/2015
 Risposta multipla;informatica;Quali tra queste non sono periferiche di input?;0Microfono/0Plotter/1Monitor/0Tastiera;Castelli Francesco;05/11/2015
-Risposta multipla;informatica;Quali tra questi sono sistemi operativi?;1Windows/0Word/0Software/1Linux;Castelli Francesco;05/11/2015
-Risposta multipla;informatica;Quali tra questi sono memorie esterne al PC?;0Stampante/1CD/0Modem/1USB;Castelli Francesco;05/11/2015
 Risposta multipla;informatica;Che cos'e' l'informatica?;1Una scienza/0Una professione/1Un luogo/0Nessuna delle precedenti;Ballabio Giulio;05/11/2015
 Risposta multipla;informatica;Unita' di misura di un dato informatico?;1Bit/0Pixel/0Hertz/0Volt;Ballabio Giulio;05/11/2015
 Risposta multipla;informatica;Cos'e' un Sistema Operativo?;0Insieme programmi installati/0Metodo con cui opera PC/1Interfaccia/0Programma che spiega funzioni;Castelli Francesco;05/11/2015
@@ -15,8 +14,11 @@ Vero o Falso;informatica;La ROM e' un tipo di memoria;1V/0F;Castelli Francesco;0
 Vero o Falso;informatica;La numerazione binaria si basa su 0 e 1;1V/0F;Castelli Francesco;05/11/2015
 Vero o Falso;informatica;Un byte e' formato da 8 bit;1V/0F;Castelli Francesco;05/11/2015
 Vero o Falso;informatica;Un bit e' formato da 8 byte;0V/1F;Castelli Francesco;05/11/2015
+Risposta aperta;informatica;I file .exe sono file _______;1Eseguibili;Mariani Massimo;05/11/2015
+Risposta aperta;informatica;I file .doc sono file di_______;1Word;Mariani Massimo;05/11/2015
 Risposta multipla;informatica;Quale delle seguenti unita' di memoria non consente la modifica dei dati in essa contenuti?;0RAM/0Hard disk/0Floppy disk/1ROM.;Castelli Francesco;05/11/2015
 Risposta multipla;informatica;Quanti caratteri diversi possono essere rappresentati nel codice ASCII ?;0infiniti/08/1256/01024;Castelli Francesco;05/11/2015
+Vero o Falso;informatica;In Word e' possibile avere un'intestazione e pie' di pagina diversa dalla prima pagina?;1V/0F;Ballabio Giulio;11/12/15
 Risposta multipla;informatica;Quando si spegne il PC:;0si perdono i dati contenuti nella ROM/0si perdono i dati contenuti nell'Hard-disk/0si perdono i dati contenuti nel floppy-disk/1si perdono i dati contenuti nella RAM;Castelli Francesco;05/11/2015
 Risposta multipla;informatica;Il termine ROM e' l'acronimo di:;0Random Only Memory/1Read Only Memory/0Read Optical Memory/0Random Optical memory;Castelli Francesco;05/11/2015
 Risposta multipla;informatica;In quale unita' di misura e' normalmente espressa la capacita' di memoria di un Hard-disk ?;0Kbyte/0Bit/0Mbyte/1Gbyte;Castelli Francesco;05/11/2015
@@ -25,17 +27,16 @@ Risposta multipla;informatica;La RAM di un moderno personal computer puo' essere
 Risposta multipla;informatica;Quale tra i seguenti dispositivi di memoria puo' avere la capacita' piu' alta?;0RAM/0Floppy disk/0CD-ROM/1Hard-disk;Mariani Massimo;05/11/2015
 Risposta aperta;informatica;Che differenza c'e' tra hardware e software?;-;Mariani Massimo;05/11/2015
 Risposta aperta;informatica;Internet consente di __________ nel web;1Navigare;Mariani Massimo;05/11/2015
+Risposta multipla;informatica;Quali tra questi sono sistemi operativi?;1Windows/0Word/0Software/1Linux;Castelli Francesco;05/11/2015
+Risposta multipla;informatica;Quali tra questi sono memorie esterne al PC?;0Stampante/1CD/0Modem/1USB;Castelli Francesco;05/11/2015
 Risposta multipla singola;informatica;Il Browser e' un programma che consente di:;1navigare in Internet/0creare siti internet/0inviare Posta Elettronica/0connettersi ad un Internet Provider;Mariani Massimo;05/11/2015
 Risposta multipla singola;matematica;Un barattolo di pelati da 0,4 kg e' alto 11 cm e ha la base di 6 cm di diametro.  Qual e' il volume del barattolo?;0100 cm cubicI/0200 cm cubici/1300 cm cubici/0400 cm cubici;Mariani Massimo;05/11/2015
-Risposta multipla singola;informatica;Se nell’ambito di una conferenza si volessero presentare al pubblico i risultati di un’indagine statistica, quale software risulterebbe adeguato?;0Internet Explorer/0Frontpage/1Powerpoint/0Word;Mariani Massimo;05/11/2015
-Risposta aperta;informatica;I file .exe sono file _______;1Eseguibili;Mariani Massimo;05/11/2015
-Risposta aperta;informatica;I file .doc sono file di_______;1Word;Mariani Massimo;05/11/2015
+Risposta multipla singola;informatica;Se nell'ambito di una conferenza si volessero presentare al pubblico i risultati di un'indagine statistica, quale software risulterebbe adeguato?;0Internet Explorer/0Frontpage/1Powerpoint/0Word;Mariani Massimo;05/11/2015
 Risposta aperta;informatica;Il monitor e' un dispositivo di ___________;1Output;Mariani Massimo;05/11/2015
 Risposta multipla;matematica;risolvi: 7x+14=35;0x=5/0x=6/1x=3/0x=9;Mariani Massimo;05/11/2015
-Risposta multipla;matematica;risolvi: 5x+4=29;0x=7/1x=5/0x=6/0x=24;Mariani Massimo;05/11/2015
 Risposta multipla;matematica;"L'insegnante chiede : " Che cosa succede se si addizionano tre numeri dispari consecutivi ? ";1Luisa: si ottiene sempre un numero dispari/0Giovanni: si ottiene sempre un multiplo di tre/0Andrea: si ottiene a volte un numero pari a volte un numero dispari/0Paola: si ottiene sempre il triplo di uno dei tre numeri;Mariani Massimo;05/11/2015
 Risposta multipla;matematica;Un bagnino ha gia' riservato 3/7 dei suoi ombrelloni per i clienti abituali. Se gli ombrelloni riservati sono 42, quanti ombrelloni puo' ancora affittare?;124/050/018/056;Mariani Massimo;05/11/2015
 Risposta multipla;matematica;Quale dei seguenti numeri si avvicina di piu' al risultato dell'operazione 3,18% di 1732?;150/025/05/0500;Mariani Massimo;05/11/2015
 Risposta multipla;matematica;Se a = 2 e b = - 3 qual e' il valore dell' espressione 2a – 3b2?;1(–23)/0(+31)/0(–5)/0(–14);Mariani Massimo;05/11/2015
-Vero o Falso;informatica;In Power Point la combinazione di tasti maiuscolo+F5 avvia la presentazione delle diapositive?;0No/1Si';Ballabio Giulio;11/12/15
-Vero o Falso;informatica; In Word è possibile avere un'intestazione e piè di pagina diversa dalla prima pagina? ;0No/1Si';Ballabio Giulio;11/12/15
+Vero o Falso;informatica;In Power Point la combinazione di tasti maiuscolo+F5 avvia la presentazione delle diapositive?;1V/0F;Ballabio Giulio;11/12/15
+Vero o Falso;informatica;In Excel per inserire una formula in una cella devo inserire il carattere '=';1V/0F';Ballabio Giulio;11/12/15

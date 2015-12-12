@@ -66,7 +66,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 25F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label5.Location = new System.Drawing.Point(599, 62);
+            this.label5.Location = new System.Drawing.Point(570, 66);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(225, 40);
             this.label5.TabIndex = 7;
@@ -93,7 +93,7 @@
             this.label3.Font = new System.Drawing.Font("Cambria", 24.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(254, 109);
+            this.label3.Location = new System.Drawing.Point(226, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(898, 38);
             this.label3.TabIndex = 10;
@@ -104,7 +104,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 25F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(609, 167);
+            this.label4.Location = new System.Drawing.Point(572, 168);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(215, 40);
             this.label4.TabIndex = 11;
@@ -115,7 +115,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 25F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label6.Location = new System.Drawing.Point(601, 40);
+            this.label6.Location = new System.Drawing.Point(572, 36);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(223, 40);
             this.label6.TabIndex = 15;
@@ -126,7 +126,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 25F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(538, 147);
+            this.label7.Location = new System.Drawing.Point(512, 147);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(342, 40);
             this.label7.TabIndex = 14;
@@ -156,9 +156,10 @@
             // radioButton7
             // 
             this.radioButton7.AutoSize = true;
+            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton7.Location = new System.Drawing.Point(76, 389);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(85, 17);
+            this.radioButton7.Size = new System.Drawing.Size(101, 20);
             this.radioButton7.TabIndex = 3;
             this.radioButton7.TabStop = true;
             this.radioButton7.Text = "radioButton2";
@@ -179,9 +180,10 @@
             // radioButton8
             // 
             this.radioButton8.AutoSize = true;
+            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton8.Location = new System.Drawing.Point(76, 424);
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(85, 17);
+            this.radioButton8.Size = new System.Drawing.Size(101, 20);
             this.radioButton8.TabIndex = 4;
             this.radioButton8.TabStop = true;
             this.radioButton8.Text = "radioButton3";
@@ -191,9 +193,10 @@
             // radioButton9
             // 
             this.radioButton9.AutoSize = true;
+            this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton9.Location = new System.Drawing.Point(76, 466);
             this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(85, 17);
+            this.radioButton9.Size = new System.Drawing.Size(101, 20);
             this.radioButton9.TabIndex = 5;
             this.radioButton9.TabStop = true;
             this.radioButton9.Text = "radioButton4";
@@ -203,9 +206,10 @@
             // radioButton10
             // 
             this.radioButton10.AutoSize = true;
+            this.radioButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton10.Location = new System.Drawing.Point(76, 502);
             this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(85, 17);
+            this.radioButton10.Size = new System.Drawing.Size(101, 20);
             this.radioButton10.TabIndex = 6;
             this.radioButton10.TabStop = true;
             this.radioButton10.Text = "radioButton5";
@@ -215,9 +219,10 @@
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
+            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox6.Location = new System.Drawing.Point(76, 349);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(80, 17);
+            this.checkBox6.Size = new System.Drawing.Size(93, 20);
             this.checkBox6.TabIndex = 7;
             this.checkBox6.Text = "checkBox1";
             this.checkBox6.UseVisualStyleBackColor = true;
@@ -226,9 +231,10 @@
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(76, 389);
+            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox7.Location = new System.Drawing.Point(76, 390);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(80, 17);
+            this.checkBox7.Size = new System.Drawing.Size(93, 20);
             this.checkBox7.TabIndex = 8;
             this.checkBox7.Text = "checkBox2";
             this.checkBox7.UseVisualStyleBackColor = true;
@@ -237,9 +243,10 @@
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(76, 424);
+            this.checkBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox8.Location = new System.Drawing.Point(76, 430);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(80, 17);
+            this.checkBox8.Size = new System.Drawing.Size(93, 20);
             this.checkBox8.TabIndex = 9;
             this.checkBox8.Text = "checkBox3";
             this.checkBox8.UseVisualStyleBackColor = true;
@@ -248,9 +255,10 @@
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(76, 466);
+            this.checkBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox9.Location = new System.Drawing.Point(76, 469);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(80, 17);
+            this.checkBox9.Size = new System.Drawing.Size(93, 20);
             this.checkBox9.TabIndex = 10;
             this.checkBox9.Text = "checkBox4";
             this.checkBox9.UseVisualStyleBackColor = true;
@@ -259,9 +267,10 @@
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
+            this.checkBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox10.Location = new System.Drawing.Point(76, 503);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(80, 17);
+            this.checkBox10.Size = new System.Drawing.Size(93, 20);
             this.checkBox10.TabIndex = 11;
             this.checkBox10.Text = "checkBox5";
             this.checkBox10.UseVisualStyleBackColor = true;
@@ -281,19 +290,20 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Cambria", 20F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(407, 256);
+            this.label11.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(72, 279);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(584, 32);
+            this.label11.Size = new System.Drawing.Size(1191, 22);
             this.label11.TabIndex = 9;
-            this.label11.Text = "Decidi a quale questionario intendi rispondere";
+            this.label11.Text = "Dopo aver scelto di avviare uno dei due test proposti qui sotto ti verrà chiesto " +
+    "di rispondere a tutte le domande per un totale di 25 quesiti";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Cambria", 15F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(469, 301);
+            this.label12.Location = new System.Drawing.Point(448, 301);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(466, 23);
             this.label12.TabIndex = 14;
@@ -305,7 +315,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Cambria", 15F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label13.Location = new System.Drawing.Point(469, 395);
+            this.label13.Location = new System.Drawing.Point(448, 395);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(238, 23);
             this.label13.TabIndex = 15;
@@ -343,7 +353,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(626, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(579, 20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(183, 86);
             this.pictureBox1.TabIndex = 16;
@@ -355,7 +365,7 @@
             this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button10.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.Image = global::WindowsFormsApplication1.Properties.Resources.verde;
-            this.button10.Location = new System.Drawing.Point(843, 395);
+            this.button10.Location = new System.Drawing.Point(820, 395);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(267, 114);
             this.button10.TabIndex = 13;
@@ -369,7 +379,7 @@
             this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button9.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Image = global::WindowsFormsApplication1.Properties.Resources.rosso;
-            this.button9.Location = new System.Drawing.Point(333, 395);
+            this.button9.Location = new System.Drawing.Point(310, 395);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(254, 114);
             this.button9.TabIndex = 12;

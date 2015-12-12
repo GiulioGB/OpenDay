@@ -29,7 +29,7 @@ namespace WindowsFormsApplication1
             string[] allLines = File.ReadAllLines(@"C:\Users\Balla\Desktop\DA CARICARE\PROGETTO\WindowsFormsApplication1\WindowsFormsApplication1\Domande_Informatica.csv");
             
             
-            for (int i = 0; i < 39; i++)
+            for (int i = 0; i < 41; i++)
             {
                 d = allLines[i].Split(';');
                 domanda domand = new domanda();

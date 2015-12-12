@@ -27,7 +27,7 @@ namespace WindowsFormsApplication1
             //random = new Random();
             contatore = 0;
             numeroCasuale = 0;
-            numeroMAX = 20;
+            numeroMAX = 25;
             inizio1 = 2;
             inizio2 = 15;
             indiceCK = 0;
@@ -549,6 +549,13 @@ namespace WindowsFormsApplication1
                     setRispostaAperta2();
                     //assegnamento
                     label10.Text = Liste.getTesto(numeroCasuale);
+                    
+                }
+                else if (Liste.getTipo(numeroCasuale).Equals("Risposta multipla"))
+                {
+                    setRispostaMultipla2();
+                    //assegnamento
+                    label10.Text = Liste.getTesto(numeroCasuale);
                     //assegnamento scelte
                     Liste.OttieniScelteCK(numeroCasuale);
 
@@ -562,12 +569,6 @@ namespace WindowsFormsApplication1
 
                     indiceCK += 1;
                     //
-                }
-                else if (Liste.getTipo(numeroCasuale).Equals("Risposta multipla"))
-                {
-                    setRispostaMultipla2();
-                    //assegnamento
-                    label10.Text = Liste.getTesto(numeroCasuale);
                 }
                 else if (Liste.getTipo(numeroCasuale).Equals("Risposta multipla singola"))
                 {
