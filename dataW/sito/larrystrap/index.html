@@ -32,6 +32,12 @@
     <![endif]-->
 	<script>
 		jQuery(document).ready(function ($) {
+		
+				//Reset the image
+				$(this).find('.image').stop(false,true).animate({'width':$('.item').width(), 'height':$('.item').height(), 'top':'0', 'left':'0'}, {duration:100});	
+
+				//Hide the caption
+				$(this).find('div.caption').stop(false,true).fadeOut(200);
 
 		
             var jssor_1_SlideshowTransitions = [
@@ -72,6 +78,33 @@
             $(window).bind("resize", ScaleSlider);
             $(window).bind("orientationchange", ScaleSlider);
             //responsive code end
+			
+			//move the image in pixel
+			var move = -15;
+			
+			//zoom percentage, 1.2 =120%
+			var zoom = 1.2;
+
+			//On mouse over those thumbnail
+			$('.item').hover(function() {
+				
+				//Set the width and height according to the zoom percentage
+				width = $('.item').width() * zoom;
+				height = $('.item').height() * zoom;
+				
+				//Move and zoom the image
+				$(this).find('.image').stop(false,true).animate({'width':width, 'height':height, 'top':move, 'left':move}, {duration:200});
+				
+				//Display the caption
+				$(this).find('div.caption').stop(false,true).fadeIn(200);
+			},
+			function() {
+				//Reset the image
+				$(this).find('.image').stop(false,true).animate({'width':$('.item').width(), 'height':$('.item').height(), 'top':'0', 'left':'0'}, {duration:100});	
+
+				//Hide the caption
+				$(this).find('div.caption').stop(false,true).fadeOut(200);
+			});
         });
 	</script>
 	
@@ -126,6 +159,71 @@
         .jssora12r:hover { background-position: -195px -37px; }
         .jssora12l.jssora12ldn { background-position: -256px -37px; }
         .jssora12r.jssora12rdn { background-position: -315px -37px; }
+		
+		.item {
+			width:860px;
+			height:500px;	
+			border:4px solid #222;	
+			margin:5px 5px 5px 0;
+			
+			/* required to hide the image after resized */
+			overflow:hidden;
+			
+			/* for child absolute position */
+			position:relative;
+			
+			/* display div in line */
+			float:left;
+		}
+
+	.item .caption {
+		width:860px;
+		height:500px;
+		background:#000;
+		color:#fff;
+		font-weight:bold;
+			
+		/* fix it at the bottom */
+		position:absolute;
+		left:0;
+
+		/* hide it by default */
+		display:none;
+
+		/* opacity setting */
+		filter:alpha(opacity=80);    /* ie  */
+		-moz-opacity:0.8;    /* old mozilla browser like netscape  */
+		-khtml-opacity: 0.8;    /* for really really old safari */  
+		opacity: 0.8;    /* css standard, currently it works in most modern browsers like firefox,  */
+
+	}
+
+	.item .caption a {
+		text-decoration:none;
+		color:#0cc7dd;
+		font-size:30px;	
+		
+		/* add spacing and make the whole row clickable*/
+		padding:5px;
+		display:block;
+	}
+
+	.item .caption p {
+		padding:5px;	
+		margin:0;
+		font-size:30px;
+	}
+
+	.image {
+		border:0;
+		
+		/* allow javascript moves the img position*/
+		position:absolute;
+	}
+
+	.clear {
+		clear:both;	
+	}
 	</style>
 
 </head>
@@ -150,8 +248,11 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+					<li>
+                        <a class="page-scroll" href=".intro">HOME</a>
+                    </li>
                     <li>
-                        <a class="page-scroll" href="#about">HOME</a>
+                        <a class="page-scroll" href="#about">NOZIONI GENERALI</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#job">SBOCCHI LAVORATIVI</a>
@@ -159,9 +260,7 @@
                     <li>
                         <a class="page-scroll" href="#university">UNIVERSITA'</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#images">IMMAGINI</a>
-                    </li>
+
                     <li>
                         <a class="page-scroll" href="#contact">CONTATTI</a>
                     </li>
@@ -191,44 +290,52 @@
     </header>
 
     <!-- home-->
-    <section id="about" class="content-section text-center">
-        <div class="home">
+    <section id="about" class="content-section text-center" style="
+    padding-top: 120px;">
+        <div class="home" style="
+    height: 800px padding-top: 100px;;
+">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>NOZIONI GENERALI</h2>
-                    <p>L' informatica è la scienza che si occupa del trattamento dell' informazione mediante procedure automatizzabili. In particolare ha per oggetto lo studio dei fondamenti teorici dell' informazione, della sua computazione a livello logico e delle tecniche pratiche per la sua implementazione e applicazione in sistemi elettronici automatizzati detti quindi sistemi informatici. La questione principale che sostiene l' informatica è dunque "come si può automatizzare efficientemente l' elaborazione di informazioni". L' informatica, assieme all' elettronica e alle telecomunicazioni unificate insieme sotto la denominazione Information and Communication Technology (ICT), rappresenta quella disciplina e allo stesso tempo quel settore economico che ha dato vita e sviluppo alla terza rivoluzione industriale attraverso quella che è comunemente nota come rivoluzione informatica.</p>
+                    <img src="img/home.png" style="width: 350px; height: 200px; float:left; margin:10px;">
+                    <p> - E' la scienza che si occupa del trattamento dell' informazione mediante procedure automatizzabili</br></br>- Ha per oggetto lo studio dei fondamenti teorici dell' informazione</br></br>- La questione principale che sostiene l' informatica è dunque "come si può automatizzare efficientemente l' elaborazione di informazioni"</br></br>- Rappresenta quella disciplina e allo stesso tempo quel settore economico che ha dato vita e sviluppo alla terza rivoluzione industriale attraverso quella che è comunemente nota come rivoluzione informatica.</p>
                 </div>
             </div>
+			<a href="#job" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
         </div>
     </section>
 
     <!-- sbocchi lavorativi -->
-    <section id="job" class="content-section text-center">
+    <section id="job" class="content-section text-center" style="
+    padding-top: 90px;">
         <div class="jo">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
+                <div>
                     <h2>SBOCCHI LAVORATIVI</h2>
 					<h4>Percorso Formativo E Sbocchi Professionali</h4></br>
-					<p><b>SVILUPPATORI DI APPLICAZIONI</b></BR>
-					Traducono i requisiti software in codice sorgente, questo codice, scritto in un determinato 
-					linguaggio di programmazione verrà poi eseguito da un elaboratore.</br>
+					<p><b><img src="img/sviluppoapp.jpg" style="width: 320px; height: 170px; float:left; margin:10px;"></b></BR>
+					Traducono i requisiti software in codice sorgente,</br> questo codice, scritto in un determinato 
+					linguaggio</br> di programmazione verrà poi eseguito da un elaboratore.</br>
 					<a href="biografia.html#zuckerberg">[Mark Elliot Zuckerberg]</a></br></br>
-					<b>AMMINISTRATORE DI DATABASE</b></br>
-					Operatore che all’interno di un azienda si occupa installare, configurare e gestire il server di database</BR>
+					<b><img src="img/database.jpg" style="width: 320px; height: 170px; float:right; margin:10px;"></b></br>
+					Operatore che all’interno di un azienda si occupa installare,</br> configurare e gestire il server di database attraverso programmi di DBMS </br>
+					come, per esempio, Access</BR>
 					</BR>
-					<b>SISTEMISTA</b></br>
-					Il sistemista è un tecnico specializzato che si occupa dell’installazione, configurazione, gestione, manutenzione, 
-					aggiornamento e monitoraggio di un sistema operativo e di uno o più sottosistemi di un sistema informatico.</br></br>
-					<b>SVILUPPATORE DI VIDEOGIOCHI</b></br>
+					</BR></br><b><img src="img/sistemista.jpg" style="width: 320px; height: 170px; float:left; margin:10px;"></b></br>
+					Il sistemista è un tecnico specializzato che si occupa dell’installazione,</br> configurazione, gestione, manutenzione, 
+					aggiornamento e monitoraggio</br> di un sistema operativo e di uno o più sottosistemi di un sistema informatico.</br></br>
+					</br></br><b><img src="img/videogame.jpg" style="width: 320px; height: 170px; float:right; margin:10px;"></b></br>
 					Lo sviluppatore di videogiochi è colui che realizza applicazioni videoludiche, 
 					ovvero software interattivi di intrattenimento. Una società di sviluppo di videogiochi è un gruppo di sviluppatori 
 					con una comune ragione sociale, che sviluppa tali prodotti.</br>
 					<a href="biografia.html#koji">[Hideo Kojima]</a></br></br>
-					<b>WEB DESIGNER</b></br> 
-					Il web designer è colui che si occupa della codifica in linguaggio web di una bozza grafica realizzata da un graphic designer. 
+					</br><b><img src="img/designer.jpg" style="width: 320px; height: 170px; float:left; margin:10px;"></b></br> 
+					Il web designer è colui che si occupa della codifica in linguaggio web</br> di una bozza grafica realizzata da un graphic designer </br>
 					Esistono tuttavia numerosi web designer che sono esperti anche nel campo del graphic design, mentre è più rara la situazione 
 					inversa</br></br>
-					<b>WEB DEVELOPER</b></br>
+					</br><b><img src="img/developer.jpg" style="width: 320px; height: 170px; float:right; margin:10px;"></b></br>
 					Web developer, parola di origine inglese traducibile con sviluppatore web, è una figura professionale che si occupa 
 					dello sviluppo di applicazioni web, in particolare dello sviluppo del codice sorgente di programmazione, 
 					dell'ottimizzazione dei database e dei linguaggi di markup attraverso tecniche di programmazione Web</br>
@@ -236,28 +343,33 @@
 					</p>	
                     </div>
             </div>
+			<a href="#university" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
         </div>
     </section>
 
     <!-- università -->
-    <section id="university" class="content-section text-center">
-        <div class="uni">
-            <div class="container">
+   <!-- <section id="university" class="content-section text-center" style="
+    padding-top: 20px;">
+        <div class="uni" style="
+    height: 1100px;">
+            <div class="container" style="
+    width: 1730px;">
+			<div><h2>UNIVERSITA'</h2></div>
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>UNIVERSITA'</h2>
-                    <p><b>LAUREA IN INFORMATICA</br></b>&nbsp;Il corso fornisce allo studente competenze e capacità fortemente interdisciplinari per rispondere alle esigenze sia della ricerca, sia del mercato del lavoro. Il carattere pervasivo dell'informatica richiede infatti figure professionali capaci di applicarla in molteplici settori produttivi e di comprenderne gli impatti in un più ampio contesto culturale, sociale ed economico.</p>
-                    <p><b>ING.INFORMATICA</br></b>&nbsp;La natura fortemente interdisciplinare dell'informatica e delle sue innumerevoli applicazioni richiede agli ingegneri informatici una cultura ad ampio spettro fin dalla Laurea triennale, sia per permettere un veloce ed efficace inserimento nel mondo del lavoro, sia per formare una solida base per l'eventuale approfondimento degli studi nei livelli superiori del percorso formativo.</p>
-                    <p><b>ING.ELETTRICA</br></b>&nbsp;I laureati in Ingegneria Elettrica sono caratterizzati da un bagaglio di conoscenze ad ampio spettro, necessarie ad affrontare le sfide sempre più impegnative del mondo del lavoro e della ricerca, non solo nell'ambito della produzione, trasmissione e distribuzione dell'energia elettrica, ma anche nella molteplice e variegata realtà delle applicazioni elettriche/elettroniche in ambito industriale, civile e dei servizi, nei settori dei trasporti e della compatibilità elettromagnetica</p>
-                    <p><b>ING.ELETTRONICA</br></b>&nbsp;La natura fortemente interdisciplinare dell’elettronica impone una preparazione scientifica e tecnica ad ampio spettro fin dalla Laurea di Primo Livello, sia per permettere un efficace inserimento nel mondo del lavoro che per formare una solida base per l’eventuale approfondimento degli studi nei livelli superiori del percorso universitario.</p>
-                    <p><b>ING.DI TELECOMUNICAZIONI</br></b>&nbsp;Il corso di studi in Ingegneria delle Telecomunicazioni si pone l'obiettivo di fornire una preparazione ingegneristica finalizzata allo sviluppo e all'impiego delle diverse tecnologie delle comunicazioni, con un percorso di formazione multidisciplinare. Agli studenti vengono offerte una solida preparazione di base e una serie di strumenti metodologici e tecnologici adatti ad affrontare tutte le problematiche delle moderne Telecomunicazioni.</p>
+                    
+					
+					 
+					
                 </div>
             </div>
          </div>
-    </section>
+    </section>-->
 	
-    <!-- immagini-->
-    <section id="images" class="content-section text-center">
-	<h2>IMMAGINI</h2>
+    <section id="university" class="content-section text-center" style="
+    padding-top: 250px;">
+	<h2>UNIVERSITA'</h2>
         <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 900px; height: 500px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -266,22 +378,41 @@
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 900px; height: 500px; overflow: hidden;">
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/uno.jpg" />
+                <div class="item">
+						<a href="#"><img class="image" src="img/Uni/ingele.jpg" alt="title" title="" width="500px" height="350px" /></a>
+						<div class="caption">
+							<p></br>I laureati in Ingegneria Elettrica sono caratterizzati da un bagaglio di conoscenze ad ampio spettro, necessarie ad affrontare le sfide sempre più impegnative del mondo del lavoro e della ricerca, non solo nell'ambito della produzione, trasmissione e distribuzione dell'energia elettrica</p>
+							</div>
+					</div>  
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/due.jpg" />
+                <div class="item">
+						<a href="#"><img class="image" src="img/Uni/inginfo.jpg" alt="title" title="" width="500px" height="350px"/></a>
+						<div class="caption">
+							<p></br>La natura fortemente interdisciplinare dell'informatica e delle sue innumerevoli applicazioni richiede agli ingegneri informatici una cultura ad ampio spettro fin dalla Laurea triennale, sia per permettere un veloce ed efficace inserimento nel mondo del lavoro, sia per formare una solida base per l'eventuale approfondimento degli studi nei livelli superiori del percorso formativo</p>
+						</div>
+				</div>
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/tre.jpg" />
+                <div class="item">
+						<a href="#"><img class="image" src="img/Uni/ingTele.jpg" alt="title" title="" width="500px" height="350px"/></a>
+						<div class="caption">
+							<p></br>Il corso di studi in Ingegneria delle Telecomunicazioni si pone l'obiettivo di fornire una preparazione ingegneristica finalizzata allo sviluppo e all'impiego delle diverse tecnologie delle comunicazioni, con un percorso di formazione multidisciplinare</p>
+							</div>
+					</div>
             </div>
 			<div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/quattro.jpg" />
+                <div class="item">
+						<a href="#"><img class="image" src="img/Uni/ingele.jpg" alt="title" title="" width="500px" height="350px" /></a>
+						<div class="caption">
+							<p></br>I laureati in Ingegneria Elettrica sono caratterizzati da un bagaglio di conoscenze ad ampio spettro, necessarie ad affrontare le sfide sempre più impegnative del mondo del lavoro e della ricerca, non solo nell'ambito della produzione, trasmissione e distribuzione dell'energia elettrica</p>
+							</div>
+					</div>  
             </div>
 			<div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/cinque.jpg" />
-            </div>
-			<div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/sei.jpg" />
+                <a href="http://www.poliorientami.polimi.it/cosasistudia/corsi-di-laurea-ingegneria/ingegneria-informatica/"<div class="item">
+						<img class="image" src="img/Uni/poli.jpg" alt="title" title="" width="500px" height="350px"/>
+					</div></a>
             </div>
         </div>
         <!-- Bullet Navigator -->
@@ -289,14 +420,15 @@
             <!-- bullet navigator item prototype -->
             <div data-u="prototype" style="width:16px;height:16px;"></div>
         </div>
-        <!-- Arrow Navigator -->
-        <span data-u="arrowleft" class="jssora12l" style="top:123px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
-        <span data-u="arrowright" class="jssora12r" style="top:123px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
-        <a href="http://www.jssor.com" style="display:none">Jssor Slider</a>
+<a href="#contact" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
     </div>
     </section>
+	
     <!-- contatti -->
-	<section id="contact"  class="content-section text-center">
+	<section id="contact"  class="content-section text-center" style="
+    padding-top: 400px;">
         <div class="con">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
