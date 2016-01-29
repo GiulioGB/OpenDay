@@ -1,4 +1,0 @@
-Abbiamo deciso di fare una pagina dedicata completamente allo scorrimento verticale in modo da creare una specie di presentazione con tutte le informazioni disponibili di facile accesso.
-Ci siamo basati su un template disponibile alla pagina http://startbootstrap.com/template-overviews/grayscale/.
-La sezione sbocchi lavorativi la abbiamo strutturata seguendo i consigli del prof. Breviario.
-Lo scorrimento immagini della sezione "Università" lo abbiamo fatto attraverso uno script trovato online.
